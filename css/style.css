@@ -1,0 +1,275 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 20px;
+}
+
+.img-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    /* Adjust the margin between the logo images */
+}
+
+.img-logo img,
+.img-social img {
+    max-height: 100%;
+}
+
+.media-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.first {
+    padding: 20px;
+    
+}
+
+.main-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.second {
+    display: flex;
+    /* Enable flexbox layout */
+    flex-direction: column;
+    /* Arrange items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    padding: 0 40px;
+    /* Add padding to the container */
+}
+
+.second p {
+    max-width: 100%;
+    /* Ensure paragraphs don't exceed container width */
+    text-align: justify;
+    /* Justify text */
+}
+
+
+.third {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.third img {
+    width: 100%;
+    /* Keep the width at 100% */
+    height: auto;
+    /* Ensure the aspect ratio is maintained */
+    z-index: 1;
+    /* Set a lower z-index for the image */
+}
+
+.third ul {
+    list-style-type: none;
+    padding: 20px;
+    position: absolute;
+    left: 70px;
+    /* Add margin to move the list onto the image */
+    top: 45%;
+    transform: translateY(-50%);
+    /* Vertically center the list */
+    z-index: 2;
+    /* Set a higher z-index for the list */
+    column-count: 2;
+    /* Split the list into two columns */
+    column-gap: 20px;
+    /* Add gap between columns */
+}
+
+.third li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.third li::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    /* Adjust the size of the square */
+    height: 10px;
+    /* Adjust the size of the square */
+    border: 2px solid lightslategray;
+    /* Add border to outline the square */
+    margin-right: 10px;
+    /* Add spacing between the square and the text */
+}
+
+.third p {
+    z-index: 1;
+    /* Ensure the text appears above the image */
+    color: white;
+    /* Ensure the text is visible */
+    margin-left: 50%;
+    /* Adjust margin to create space for the list */
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 24pt;
+    margin-left: 10px;
+}
+
+h6 {
+    margin: 0;
+    color: lightslategray;
+    font-size: 8pt;
+    margin-left: 10px;
+}
+
+p {
+    margin: 0;
+    padding: 10px 0;
+    text-indent: 20px;
+}
+
+footer {
+    margin: 0 auto;
+}
+
+.van-info {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    padding-left: 0px;
+}
+
+.van-info div {
+    margin-right: 20px;
+    /* Adjust margin to create space between the image and text */
+}
+
+.van-info h2 {
+    margin-left: 20px;
+    /* Remove default margin */
+}
+
+.van-info p {
+    
+    margin-left: 0;
+    margin-right: 0;
+    /* Remove default margin */
+}
+
+.share-button {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(164, 44, 25);
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    /* Center the text horizontally */
+    align-items: center;
+    /* Center the text vertically */
+}
+
+.share-button {
+    color: rgb(255, 255, 255);
+    /* Set text color to white */
+    margin: 0;
+    /* Remove default margin */
+    margin-left: auto;
+}
+
+.copyright {
+    margin: 0 auto;
+}
+
+.first-hline {
+    width: 900px;
+    margin: 0 auto;
+    /* Center the horizontal line horizontally */
+    text-align: center;
+    /* Center the child elements horizontally */
+}
+
+.second-hline {
+    width: 960px;
+    margin: 0 auto;
+    /* Center the horizontal line horizontally */
+    text-align: center;
+    /* Center the child elements horizontally */
+}
+
+.first-hline img {
+    width: 920px;
+    height: auto;
+    /* Remove the '0' value from 'height' */
+}
+
+.second-hline img {
+    width: 920px;
+    height: auto;
+    /* Remove the '0' value from 'height' */
+}
+
+.logo-line {
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+    justify-content: center;
+    /* Center items horizontally */
+}
+
+.left-hr,
+.right-hr {
+
+    height: 1px;
+    /* Set the height of the hr */
+    background-color: lightslategray;
+    /* Set the color of the hr */
+    margin: 0;
+    /* Reset margin */
+    width: 440px;
+}
+
+
+    img {
+        max-width: 100%;
+        /* Ensure the image does not exceed its container's width */
+    }
+
+    .copyright {
+        display: flex;
+        align-items: center;
+        /* Center items vertically */
+        justify-content: center;
+        /* Center items horizontally */
+        margin: 0 auto;
+    }
+
+    .dot {
+        display: inline-block;
+        width: 6px; /* Adjust the size of the dot */
+        height: 6px; /* Adjust the size of the dot */
+        border-radius: 50%; /* Make it a circle */
+        background-color: lightslategray; /* Set the color of the dot */
+        vertical-align: middle; /* Vertically align the dot */
+        margin: 0 5px; /* Adjust the space around the dot */
+    }
